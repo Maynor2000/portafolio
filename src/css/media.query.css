@@ -1,0 +1,46 @@
+@media screen and (max-width: 769px), print{
+    ._img{
+        display: inline-block;
+
+    }
+    ._card_r{
+        flex: none;
+        width: 50%;
+    }
+    .is-3{
+        width: 0;
+    }
+    #is-mobile{
+        display: flex;
+    }
+
+}
+@media screen and (min-width: 769px), print{
+    .is-8_r{
+        flex: none;
+        width: 66.66667%;
+    }
+}
+/*estos son las consultas de medios para una resolucion de mobile*/
+@media screen and (max-width: 360px), print{
+    ._card_r{
+        flex: none;
+        width: 100%;
+    }
+    #is-mobile{
+        display: block;
+    }
+    .is-1{
+        display: none;
+    }
+    .notification{
+        width:90%;
+        margin: auto;
+    }
+    #is_one_quarter{
+        width: 100%;
+    }
+    #_inline{
+        display: inline-block;
+    }
+}

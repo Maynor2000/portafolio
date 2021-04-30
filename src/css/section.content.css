@@ -1,0 +1,13 @@
+.color{
+    background-color: #FA8072;
+    border-radius: 15%;
+    padding: 2%;
+}
+img.tr{
+    position:relative;
+    transform:scale();
+    transition:transform .6s ease-out;
+}
+img.tr:hover{
+    transform: scale(1.2);
+}
