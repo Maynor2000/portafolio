@@ -3,7 +3,7 @@ const SectionTitle = ()=>{
     return(
         <>
 
-        <p class="title is-2 is-spaced">
+        <p class="title is-2 is-spaced font-effect-outline" style={{fontFamily: '"Sofia", sans-serif'}}>
             Lenguajes, Herramientas y Framework
         </p>
 

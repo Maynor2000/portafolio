@@ -2,7 +2,7 @@
   "name": "protafolio",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://Maynor2000.github.io/portafolio",
+  "homepage": "http://Maynor2000.github.io/portafolio",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
@@ -18,13 +18,14 @@
     "emailjs-com": "^2.6.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-google-maps": "^9.4.5",
     "react-scripts": "4.0.3",
     "styled-components": "^5.2.3",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

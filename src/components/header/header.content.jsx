@@ -18,13 +18,13 @@ const HeaderContent = (props)=>{
   </div>
   <div className="level-item has-text-centered">
     <div>
-      <p className="heading">Followers</p>
+      <p className="heading">No me gusta</p>
       <p className="title">0</p>
     </div>
   </div>
   <div className="level-item has-text-centered">
     <div>
-      <p className="heading">Likes</p>
+      <p className="heading">Me gusta</p>
       <p className="title">0</p>
     </div>
   </div>
