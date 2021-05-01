@@ -8,7 +8,7 @@ const SectionGridProject = ()=>{
   const nombres = [{nombre:"Maynor Alvarez Acopa",
                     titulo:"React",
                     url:"https://www.mundodelmotor.net/wp-content/uploads/2018/12/autos-modificados_opt.jpg",
-                    descripcion:"este auto me lo compre ayer por la noche porque no tenia en que gastar mi dinero",
+                    descripcion:"esta tarjeta es generada dinámicamente con los datos del backend",
                     fecha:"28/04/2021",
                     grid:["https://img.icons8.com/color/48/000000/react-native.png",
                           "https://img.icons8.com/color/48/000000/javascript.png",
@@ -26,4 +26,4 @@ const SectionGridProject = ()=>{
 </div>
     )
 }
-export default SectionGridProject;
+export default SectionGridProject
