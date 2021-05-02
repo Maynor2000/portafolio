@@ -1,4 +1,5 @@
 import React,{useEffect} from 'react';
+
 import anime from 'animejs/lib/anime.es.js';
 export const useAnimator = (classElement,possInit,possEnd)=>{
     let scroll =null; 
@@ -85,4 +86,40 @@ export const useGridAnime = (classElement,row,column)=>{
     window.addEventListener("scroll",handleAnimate)
   })
   return distance
+}
+export const useButtonAnimator = ()=>{
+  const setEvent = (classElement,grad,scale)=>{
+    anime({
+      targets: classElement,
+      rotate: {
+        value: grad||360,
+        duration: 1800,
+        easing: 'easeInOutSine'
+      },
+      scale: {
+        value: scale||1,
+        duration: 1600,
+        delay: 10,
+        easing: 'easeInOutQuart'
+      },
+      delay: 0 // All properties except 'scale' inherit 250ms delay
+    });
+    anime({
+      targets: classElement,
+      rotate: {
+        value: -grad||-360,
+        duration: 1800,
+        easing: 'easeInOutSine'
+      },
+      scale: {
+        value: -scale||-1,
+        duration: 1600,
+        delay: 10,
+        easing: 'easeInOutQuart'
+      },
+      delay: 0 // All properties except 'scale' inherit 250ms delay
+    });
+  }
+  return[setEvent]
+ 
 }

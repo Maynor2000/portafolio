@@ -1,13 +1,13 @@
-import React,{useRef}from 'react';
+import React,{useRef,useState}from 'react';
 import emailjs from 'emailjs-com';
 const SectionChatmodal = ()=>{
+    const [enviado,setEnviado] = useState()
     const nombre = useRef ()
     const apellido = useRef ()
     const email = useRef ()
     const NombreEmpresa = useRef ()
     const mensaje = useRef ()
     const notificacion = useRef ()
-    let enviado = null;
     const handleMails = (e)=>{
         e.preventDefault();
 
@@ -15,22 +15,19 @@ const SectionChatmodal = ()=>{
  
         emailjs.sendForm('service_31tzauq', 'template_57zt61d', e.target, 'user_nLBM9GNP5NB5NVITWMwTq')
         .then((result) => {
-          enviado=result.text;
+          setEnviado(true)
+          notificacion.current.style.display="inline-block"
           console.log(result.text)
         }, (error) => {
-            enviado=error.text;
+            setEnviado(false)
             console.log(error.text)
+            notificacion.current.style.display="inline-block"
         });
         nombre.current.value=""
         apellido.current.value=""
         email.current.value=""
         NombreEmpresa.current.value=""
         mensaje.current.value=""
-        if(enviado=="ok"){
-            notificacion.current.style.display="inline-block"
-        }else{
-            notificacion.current.style.display="inline-block"
-        }
   }
     return(
         <div className="content" 
@@ -75,7 +72,7 @@ const SectionChatmodal = ()=>{
                     <input type="submit" className="button is-link" />
                 </div>
                 {enviado?<span style={{display:"none"}} ref={notificacion} class="tag is-success">Enviado</span>
-                :<span style={{display:"none"}} ref={notificacion} class="tag is-danger">No Enviado</span>}
+                :<span style={{display:"none"}} ref={notificacion} class="tag is-danger">{console.log(enviado)}No Enviado</span>}
             </div>
             
             </form>

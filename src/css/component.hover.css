@@ -2,8 +2,9 @@ ol ol li:hover{
      text-decoration-line: underline;
 }
 .card-image figure:hover{
-     transform: scale(1.1);
+     transform: scale(1.2);
+     transition:transform .8s ease-out;
 }
 #card-image{
-     overflow: hidden;
+     
 }

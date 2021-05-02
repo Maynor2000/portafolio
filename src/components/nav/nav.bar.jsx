@@ -29,10 +29,10 @@ const NavBar = ()=>{
               </a>
               <div className="navbar-dropdown is-boxed">
                 <a className="navbar-item" href="https://github.com/Maynor2000" target="_blank" rel="noopener">
-                  Mi github
+                <img src="https://img.icons8.com/windows/32/000000/github.png"/>{"\u00A0"}Mi github
                 </a>
                 <a className="navbar-item" href="https://www.facebook.com/mayk.akopii.7/" target="_blank" rel="noopener">
-                  Facebook
+                <img src="https://img.icons8.com/nolan/64/facebook.png"/>{"\u00A0"}Facebook
                 </a>
               </div>
             </div>
@@ -52,7 +52,7 @@ const NavBar = ()=>{
                   </button>
                 </p>
                 <p className="control" style={{width:"40%"}}>
-                  <a style={{width:"100%"}} className="button button is-warning is-focused" href="https://github.com/jgthms/bulma/releases/download/0.9.2/bulma-0.9.2.zip">
+                  <a style={{width:"100%"}} className="button button is-warning is-focused" href="https://github.com/Maynor2000/portafolio/raw/0c8e0984731b247f87b04af06387bb366390e310/src/medias/images/Maynor%20Alvarez%20Acopa%20cv.pdf">
                     <span className="icon">
                       <i className="fas fa-download"></i>
                     </span>

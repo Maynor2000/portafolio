@@ -8,7 +8,7 @@ const SectionCardproject = (props)=>{
   }
     return (
         <div class="card">
-        <div class="card-image">
+        <div class="card-image" style={{overflow:"hidden"}}>
           <figure class="image is-4by3">
             <img src={props.data.url} alt={props.data.nombre}/>
           </figure>
