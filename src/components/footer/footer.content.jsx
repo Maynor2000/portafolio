@@ -10,6 +10,7 @@ const FooterContent = ()=>{
     </p>
     
   </div>
+
 </footer>
     )
 }

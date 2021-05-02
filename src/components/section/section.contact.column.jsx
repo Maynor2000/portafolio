@@ -1,15 +1,36 @@
 import React from 'react';
 import '../../css/section.content.css'
 import GoogleMapComponent from './GoogleMapComponent';
-import SectionContactMessage from './section.contact.message';
+import {useAnimator} from '../../hooks/useAnimator';
 
 const SectionContactColumn = ()=>{
+    //const [scroll,setScroll] = useState()
+   useAnimator(".anime",-385,125)
 
     return(
         <div className="columns is-vcentered">
-          <div className="column is-6" 
-            style={{fontFamily: '"Sofia", sans-serif',fontSize:"3vw",color:"white",textShadow:"2px 2px 2px black"}}>
-            Mi Ubicación...
+          
+          <div className="column is-6"
+               style={{fontFamily: '"Sofia", sans-serif'
+                    ,fontSize:"4vw"
+                    ,color:"white"
+                    ,textShadow:"2px 2px 2px black"}}>
+
+            <p style={{transform:"translateX(-380px)",width:"28vw"}}className="anime">Mi Ubicación...</p>
+            <p style={{width:"2px"
+                       ,height:"2px"
+                       ,position:"fixed"
+                       ,bottom:"0"
+                       ,background:"red"}}
+                       className="RefS"
+                       ></p>
+            <p style={{width:"2px"
+                       ,height:"2px"
+                       ,position:"fixed"
+                       ,top:"0"
+                       ,background:"red"}}
+                       className="RefI"
+                       ></p>
           </div>
           <div className="column">
           <GoogleMapComponent
