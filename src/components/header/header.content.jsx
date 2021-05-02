@@ -5,11 +5,11 @@ const HeaderContent = (props)=>{
   const[setEvent] = useButtonAnimator()
   const handleAnimate = (e)=>{
     if(e.target.matches(".bt1")){
-      setEvent(".bt1",360,1.2)
+      setEvent(".bt1",760,1.2)
       
     }
     if(e.target.matches(".bt2")){
-      setEvent(".bt2",360,1.2)
+      setEvent(".bt2",760,1.2)
       
     }
     

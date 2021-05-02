@@ -2,7 +2,7 @@ import React from 'react';
 import '../../css/media.query.css';
 import {useGridAnime} from '../../hooks/useAnimator';
 const SectionGridImg = ()=>{
-  useGridAnime(".grid",10,1)
+  //useGridAnime(".grid",10,1)
     return(
 <div class="columns grid">
   <div className="_img column">
