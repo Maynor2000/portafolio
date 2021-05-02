@@ -44,6 +44,45 @@ export const useAnimator = (classElement,possInit,possEnd)=>{
     })
     return distance
 }
-export const useGridAnime = ()=>{
-  
+export const useGridAnime = (classElement,row,column)=>{
+  let scroll =null; 
+  const init = 0;
+  let RefS = null;
+  let viewportI = null;
+  let viewportF = null;
+  let viewportC = null;
+  let distance=null;
+  useEffect(()=>{
+    const text = document.querySelector(classElement)
+    distance = text.offsetTop; 
+    const handleAnimate = (e)=>{
+      scroll = window.scrollY;
+      ((d)=>{
+        const t = d.querySelector(".RefS")
+         RefS = t.offsetTop;
+         viewportI = scroll;
+         viewportF = (scroll+RefS)
+         viewportC = viewportI+(RefS/2)
+         //console.log(viewportI+(RefS/2)+" distance ")
+      })(document)
+
+      if(viewportC>distance){
+        anime({
+          rotate: {
+            value: 360,
+            duration: 1800,
+            easing: 'easeInOutSine'
+          },
+          targets: classElement,
+          scale: [
+            {value: .1, easing: 'easeOutSine', duration: 500},
+            {value: 1, easing: 'easeInOutQuad', duration: 1200}
+          ],
+          delay: anime.stagger(200, {grid: [row, column], from: 'center'})
+        });
+      }
+    }
+    window.addEventListener("scroll",handleAnimate)
+  })
+  return distance
 }

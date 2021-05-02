@@ -1,8 +1,10 @@
 import React from 'react';
 import '../../css/media.query.css';
+import {useGridAnime} from '../../hooks/useAnimator';
 const SectionGridImg = ()=>{
+  useGridAnime(".grid",10,1)
     return(
-<div class="columns">
+<div class="columns grid">
   <div className="_img column">
   <img className="tr"src="https://img.icons8.com/color/48/000000/javascript.png"/>
   </div>
