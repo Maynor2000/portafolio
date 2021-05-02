@@ -26,4 +26,4 @@ const SectionGridProject = ()=>{
 </div>
     )
 }
-export default SectionGridProject;
+export default SectionGridProject
