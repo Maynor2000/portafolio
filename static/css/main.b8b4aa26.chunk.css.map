@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/css/title.css","webpack://src/css/grafica.css"],"names":[],"mappings":"AAAA,OACI,4BACJ,CCFA,kBACI,WACJ","file":"main.b8b4aa26.chunk.css","sourcesContent":[".title{\r\n    text-shadow: 1px 1px 5px black;\r\n}",".recharts-wrapper{\r\n    margin:auto;\r\n}"]}
