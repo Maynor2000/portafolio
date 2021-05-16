@@ -10,6 +10,13 @@ object-assign
   http://jedwatson.github.io/classnames
 */
 
+/*!
+ * Splide.js
+ * Version  : 2.4.20
+ * License  : MIT
+ * Copyright: 2020 Naotoshi Fujita
+ */
+
 /*! Conditions:: INITIAL */
 
 /*! Production::    $accept : expression $end */
